@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secundara Studenti</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    #bigbox {
+      border: none;
+      height: 890px;
+      width: 99.5%;
+      display: flex;
+    }
+
+    #box1 {
+      border: none;
+      height: 890px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    label {
+      font-size: xx-large;
+    }
+
+    button {
+      font-size: xx-large;
+      border-radius: 5px;
+      background-color: #125688;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      height: fit-content;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #Zi, #Ora {
+      font-size: xx-large;
+      border-radius: 5px;
+    }
+
+    #box2 {
+      border: none;
+      height: 890px;
+      width: 50%;
+    }
+
+    @media (max-width: 850px) {
+      #bigbox {
+        flex-direction: column;
+        width: 200%;
+      }
+    }
+  </style>
+</head>
+<body style="background-color: Azure">
+
+<header>
+  <div>
+    <a href="index.html"><img src="images/logo_transparent.png" alt="Logo ETTI CLASSROOMS" id="logo"/></a>
+  </div>
+  <div>
+    <ul id="meniu">
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="http://www.electronica.pub.ro/">ETTI</a></li>
+      <li><a href="https://upb.ro/">UPB</a></li>
+    </ul>
+  </div>
+</header>
+
+<div id="bigbox">
+  <div id="box1">
+    <h1 style="text-align: center">Verifică orarul</h1>
+    <div id="container">
+      <label for="Zi">Alege ziua:</label>
+      <select id="Zi">
+        <option value="-">-</option>
+        <option value="Luni">Luni</option>
+        <option value="Marti">Marti</option>
+        <option value="Miercuri">Miercuri</option>
+        <option value="Joi">Joi</option>
+        <option value="Vineri">Vineri</option>
+      </select>
+
+      <label for="Ora">Alege ora:</label>
+      <select id="Ora">
+        <option value="-">-</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="19:00">19:00</option>
+      </select>
+      <button onclick="viewReservation()">Vezi materiile</button>
+      <div id="reservationInfo"></div>
+    </div>
+  </div>
+  <hr/>
+  <div id="box2">
+    <h1 style="text-align: center">Verifică rezervările</h1>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <img src="images/etti.png" alt="Logo ETTI" class="logo" />
+    <img src="images/upb.png" alt="Logo UPB" class="logo" />
+  </div>
+  <div id="dropup">
+    <button id="dropbtn">Link-uri utile</button>
+    <div id="dropup-content">
+      <a href="https://studenti.pub.ro/index.php?page=Informatii&ActiveViewID=tab_infogen">Studenti.pub</a>
+      <a href="https://etti.pub.ro/absolvire/login.php?jump=1">Absolvire</a>
+      <a href="https://etti.pub.ro/contracte/login.php">Contracte</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Autentificare</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    form {
+      border: none;
+      margin-top: 250px;
+      margin-left: 25%;
+    }
+
+    input {
+      width: 35%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: block;
+      margin-left: 350px;
+    }
+
+    .sub {
+      background-color: #2b6e10;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 19%;
+      text-align: center;
+    }
+
+    .a {
+      font-size: large;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      width: 50vw;
+      text-align: center;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: x-large;
+    }
+
+    #aup {
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+
+</head>
+<body style="background-color: Azure">
+
+<header>
+  <div>
+    <a href="index.html"><img src="images/logo_transparent.png" alt="Logo ETTI CLASSROOMS" id="logo"/></a>
+  </div>
+  <div>
+    <ul id="meniu">
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="http://www.electronica.pub.ro/">ETTI</a></li>
+      <li><a href="https://upb.ro/">UPB</a></li>
+    </ul>
+  </div>
+</header>
+
+<form method="post" action="/login">
+  <div class="container">
+    <p>UTILIZATOR</p>
+    <input type="text" placeholder="INTRODUCEȚI MAIL-UL" id="mail" name="mail" required>
+    <p>PAROLĂ</p>
+    <input type="password" placeholder="INTRODUCEȚI PAROLA" id="password" name="password" required>
+    <button class="sub" type="submit"><a class="a">AUTENTIFICARE</a></button>
+    <button class="sub" type="button" style="background-color: #9f2419"><a class="a" href="index.html">CANCEL</a></button>
+    <a id="aup" href="#">Ați uitat parola?</a>
+  </div>
+</form>
+
+<footer>
+  <div>
+    <img src="images/etti.png" alt="Logo ETTI" class="logo" />
+    <img src="images/upb.png" alt="Logo UPB" class="logo" />
+  </div>
+  <div id="dropup">
+    <button id="dropbtn">Link-uri utile</button>
+    <div id="dropup-content">
+      <a href="https://studenti.pub.ro/index.php?page=Informatii&ActiveViewID=tab_infogen">Studenti.pub</a>
+      <a href="https://etti.pub.ro/absolvire/login.php?jump=1">Absolvire</a>
+      <a href="https://etti.pub.ro/contracte/login.php">Contracte</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

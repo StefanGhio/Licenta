@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagină Rezervare</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    #bigbox {
+      margin-top: 100px;
+    }
+
+    #h1 {
+      text-align: center;
+    }
+
+    #box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #smallbox {
+      border: none;
+      width: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+
+    p {
+      font-size: xx-large;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    input {
+      text-align: center;
+      width: 400px;
+      height: 35px;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 250px;
+      height: 50px;
+      gap: 25px;
+      background-color: #2b6e10;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .a {
+      color: white;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body style="background-color: Azure">
+
+<header>
+  <div>
+    <a href="index.html"><img src="images/logo_transparent.png" alt="Logo ETTI CLASSROOMS" id="logo"/></a>
+  </div>
+  <div>
+    <ul id="meniu">
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="http://www.electronica.pub.ro/">ETTI</a></li>
+      <li><a href="https://upb.ro/">UPB</a></li>
+    </ul>
+  </div>
+</header>
+
+<div id="bigbox">
+
+  <div id="h1">
+    <h1>Rezervare sală</h1>
+  </div>
+
+  <form>
+    <div id="box">
+      <div id="smallbox">
+        <div>
+          <p>Clădire</p>
+          <input type="text" placeholder="INTRODUCEȚI CLĂDIREA">
+          <p>Număr</p>
+          <input type="text" placeholder="INTRODUCEȚI NUMĂRUL" required>
+          <p>Materie</p>
+          <input type="text" placeholder="INTRODUCEȚI MATERIA">
+        </div>
+        <div>
+          <p>Zi</p>
+          <input type="text" placeholder="INTRODUCEȚI ZIUA">
+          <p>Oră</p>
+          <input type="text" placeholder="INTRODUCEȚI ORA" required>
+        </div>
+      </div>
+      <button class="sub" type="submit"><a class="a">REZERVĂ</a></button>
+      <button class="sub" type="button" style="background-color: #9f2419"><a class="a" href="index.html">CANCEL</a></button>
+    </div>
+  </form>
+
+</div>
+
+<footer>
+  <div>
+    <img src="images/etti.png" alt="Logo ETTI" class="logo" />
+    <img src="images/upb.png" alt="Logo UPB" class="logo" />
+  </div>
+  <div id="dropup">
+    <button id="dropbtn">Link-uri utile</button>
+    <div id="dropup-content">
+      <a href="https://studenti.pub.ro/index.php?page=Informatii&ActiveViewID=tab_infogen">Studenti.pub</a>
+      <a href="https://etti.pub.ro/absolvire/login.php?jump=1">Absolvire</a>
+      <a href="https://etti.pub.ro/contracte/login.php">Contracte</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

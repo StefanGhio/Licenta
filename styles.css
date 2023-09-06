@@ -1,0 +1,109 @@
+/*PAGINA PRINCIPALA SI MENIU GENERAL*/
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 400px;
+    height: 50px;
+    margin-top: 7px;
+}
+
+#meniu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    color: #525259;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-top: 17px;
+}
+
+/*meniu si submeniu*/
+
+a {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    color: #525259;
+    font-weight: bold;
+    margin-right: 0;
+    margin-top: 1px;
+}
+
+#meniu a:hover {
+    color: #262659;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #262659;
+}
+
+.logo {
+    height: 75px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+/*submeniu - dropup*/
+
+#dropbtn {
+    gap: 30px;
+    font-size: 25px;
+    color: Azure;
+    background-color: #262659;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-top: 30px;
+    border: none;
+    position: relative;
+}
+
+#dropbtn:hover {
+    color: #525259;
+}
+
+#dropup:hover #dropup-content {
+    display: block;
+}
+
+#dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: Azure;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#dropup-content a {
+    color: #525259;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#dropup-content a:hover {background-color: #ddd}
+
